@@ -1,0 +1,19 @@
+{
+  "name": "cifra-de-cesar",
+  "version": "1.0.0",
+  "description": "criptografador da cifra de cesar",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanassis/cifra-de-cesar.git"
+  },
+  "author": "Alan Penteado de Assis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alanassis/cifra-de-cesar/issues"
+  },
+  "homepage": "https://github.com/alanassis/cifra-de-cesar#readme",
+  "dependencies": {
+    "js-sha1": "^0.6.0"
+  }
+}
