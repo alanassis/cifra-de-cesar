@@ -12,8 +12,5 @@
   "bugs": {
     "url": "https://github.com/alanassis/cifra-de-cesar/issues"
   },
-  "homepage": "https://github.com/alanassis/cifra-de-cesar#readme",
-  "dependencies": {
-    "js-sha1": "^0.6.0"
-  }
+  "homepage": "https://github.com/alanassis/cifra-de-cesar#readme"
 }

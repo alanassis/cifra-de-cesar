@@ -1,14 +1,19 @@
-const frase = "eu sou programador";
+const criptografador = require("./util/criptografador");
+const descriptografador = require("./util/descriptografador");
+
+const frase = "abcdefghijklmnopqrstuvwxyz";
+const numero_casas = 2;
+
+const mode = 0; // 0 para criptografar - 1 para descriptografar
 
 main();
 
 function main() {
-    const { numero_casas, cifrado } = await salvarJSON();
-  const decrypted = julioDecrypter(cifrado, numero_casas).toLocaleLowerCase();
-  const shaRes = sha(decrypted);
-  attJSON(decrypted, shaRes);
-
-  let fd = new FormData();
-  fd.append("answer", fs.createReadStream(`${__dirname}/answer.json`));
-  console.log(await postAnswer(fd));
+  if (mode == 0) {
+    const resposta = criptografador(frase, numero_casas);
+    console.log(resposta);
+  } else if (mode == 1) {
+    const resposta = descriptografador(frase, numero_casas);
+    console.log(resposta);
+  }
 }
